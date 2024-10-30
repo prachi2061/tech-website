@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrestha Nano Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Shrestha Nano Health</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Welcome to Shrestha Nano Health</h1>
+    <p>Pioneering health solutions through nanotechnology and targeted nanobot therapy.</p>
+    <button onclick="scrollToSection('services')">Explore Our Services</button>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Shrestha Nano Health is a leader in nanobot technology, specializing in health services designed to revolutionize treatment options. Our mission is to bring innovative, minimally invasive solutions to medical challenges worldwide.</p>
+    <div class="team">
+        <div class="member">
+            <img src="huhuhuhu gandu.JPG" alt="Team Member 1">
+            <h3>Dr. Prachi Shrestha</h3>
+            <p>Lead Scientist & CEO</p>
+        </div>
+        <div class="member">
+            <img src="FB_IMG_1721389009505.jpg" alt="Team Member 2">
+            <h3>Dr. Purshotom Shrestha</h3>
+            <p>Nanotechnology Specialist</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Nanotech Health Services</h2>
+    <div class="service-list">
+        <div class="service">
+            <h3>Targeted Cancer Treatment</h3>
+            <p>Nanobots designed to identify and target cancer cells with minimal impact on healthy cells.</p>
+        </div>
+        <div class="service">
+            <h3>Bloodstream Clean-up</h3>
+            <p>Nanobot treatments to cleanse blood from toxins and harmful pathogens, promoting a healthier immune system.</p>
+        </div>
+        <div class="service">
+            <h3>Cell Regeneration Therapy</h3>
+            <p>Advanced nanobots to aid in tissue repair and regeneration for rapid recovery post-injury.</p>
+        </div>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-options">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>Includes initial consultation and one nanobot health scan.</p>
+            <p><strong>$1500</strong></p>
+            <button onclick="selectPlan('Basic Plan', 1500)">Select</button>
+        </div>
+        <div class="plan">
+            <h3>Standard Plan</h3>
+            <p>Full nanobot health scan with personalized treatment plan.</p>
+            <p><strong>$3,500</strong></p>
+            <button onclick="selectPlan('Standard Plan', 3500)">Select</button>
+        </div>
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <p>Complete health solution, including three targeted treatments and follow-up scans.</p>
+            <p><strong>$7,000</strong></p>
+            <button onclick="selectPlan('Premium Plan', 7000)">Select</button>
+        </div>
+    </div>
+    <div id="confirmation" class="confirmation"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Shrestha Nano Health. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
